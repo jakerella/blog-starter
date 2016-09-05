@@ -37,6 +37,7 @@ Here are some other views you can create if you have more time:
 * A search page for posts
 * A way to edit a blog post
 * A way to edit a user profile (email, name, password)
+* A way to manage categories (add, remove, edit)
 * A way to delete a blog post with a confirmation dialog box (from what view?)
 
 ## Blog API Details
