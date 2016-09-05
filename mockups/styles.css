@@ -1,0 +1,201 @@
+@import url('https://necolas.github.io/normalize.css/4.1.1/normalize.css');
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,400italic,700italic');
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    background: transparent url('cropped-notebook-coffee.jpg') center bottom no-repeat;
+    background-size: 100% auto;
+    color: #fff;
+    text-shadow: 1px 1px 2px #666;
+    height: 15em;
+    text-align: center;
+    padding-top: 5em;
+    box-sizing: border-box;
+}
+header h1 {
+    margin: 0 0 0.5em 0;
+}
+
+.navbar {
+    border-radius: 0;
+    box-shadow: 0 3px 2px #999;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 1.6em;
+    color: #333;
+    border-bottom: 1px solid #e5e5e5;
+    margin: 1em auto 2em auto;
+    width: 80%;
+}
+
+main > section {
+    border-right: 2px solid #6cbfee;
+    padding-top: 1em;
+}
+
+.posts article {
+    margin-bottom: 1.5em;
+    color: #fff;
+    position: relative;
+}
+
+.posts article::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 10.6em;
+    top: 1em;
+    transform: rotate(45deg);
+}
+.posts article:nth-child(odd)::before {
+    background-color: #6cbfee;
+}
+.posts article:nth-child(even)::before {
+    background-color: #3594cb;
+}
+
+.posts a {
+    color: #fff;
+    text-decoration: none;
+}
+.posts a:hover {
+    color: #cef;
+}
+
+.posts time {
+    width: 10em;
+    text-align: right;
+    float: left;
+}
+.posts time span {
+    display: block;
+}
+.posts .date {
+    color: #6cbfee;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+.posts .time {
+    color: #999;
+}
+
+.posts .content {
+    border-radius: 5px;
+    width: 40em;
+    margin-left: 11em;
+    padding: 0.5em 1em;
+    box-sizing: border-box;
+}
+
+.posts article:nth-child(odd) .content {
+    background-color: #6cbfee;
+}
+.posts article:nth-child(even) .content {
+    background-color: #3594cb;
+}
+
+.posts h3 {
+    border-bottom: 1px solid #cef;
+    margin: 0 0 0.5em 0;
+}
+
+.posts cite {
+    float: right;
+    color: #cef;
+}
+
+.posts article nav {
+    border-top: 1px solid #cef;
+    text-align: right;
+    margin-top: 2em;
+    font-size: 0.9em;
+}
+.posts article nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.posts article nav li {
+    display: inline;
+}
+.posts article nav li::after {
+    content: ' | ';
+    color: #6ad;
+}
+.posts article nav li:last-child::after {
+    content: '';
+}
+
+.paging {
+    text-align: center;
+}
+
+
+.category ul {
+    width: 80%;
+    margin: 0 auto;
+}
+.category .delete {
+    float: right;
+}
+
+
+.create-post form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.create-post textarea {
+    height: 20em;
+}
+
+.create-post .meta select {
+    width: 30%;
+}
+.create-post .meta label, .create-post .meta select, .create-post .meta .btn {
+    display: inline;
+}
+.create-post .meta .btn {
+    float: right;
+    margin-left: 1em;
+}
+
+.post .body {
+    width: 80%;
+    margin: 0 auto;
+}
+.post .label {
+    float: right;
+    font-size: 0.5em;
+}
+
+.post .meta {
+    width: 80%;
+    margin: 2em auto 1em auto;
+    text-align: right;
+    color: #999;
+    border-top: 1px solid #6cbfee;
+}
+
+.sidebar h3 {
+    color: #6cbfee;
+}
+
+
+footer {
+    background-color: #333;
+    color: #ccc;
+    border-top: 3px solid #6cbfee;
+    padding: 1em;
+}
+footer p {
+    margin: 0;
+    float: right;
+}

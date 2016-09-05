@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <title>Blog</title>
+
+        <meta name='description' content='Blog layout'>
+        <meta name='author' content='Jordan Kasper'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+
+        <link rel='stylesheet' type='text/css' href='styles.css'>
+    </head>
+    <body>
+
+        <header>
+            <h1>Adventures in PR!</h1>
+            <p>A catalog of the adventures had by various members of the PR Pros team.</p>
+        </header>
+
+        <nav class='navbar navbar-inverse'>
+            <ul class='nav navbar-nav'>
+                <li><a href='index.html'>Home</a></li>
+                <li><a href='#'>About Us</a></li>
+                <li class='active'><a href='create.html'>Create</a></li>
+                <li><a href='#'>Login</a></li>
+                <li><a href='#'>Logout</a></li>
+            </ul>
+        </nav>
+
+        <main class='container'>
+            <section class='create-post col-md-9'>
+
+                <h2>Create a New Post</h2>
+
+                <form>
+                    <fieldset>
+                        <p>
+                            Will be posted as <em>Jordan Kasper</em>...
+                        </p>
+
+                        <div class='form-group'>
+                            <label for='post-title'>Title</label>
+                            <input type='text' class='form-control' id='post-title' placeholder='A new adventure...'>
+                        </div>
+
+                        <div class='form-group'>
+                            <label for='post-body'>Content</label>
+                            <textarea class='form-control' id='post-body' placeholder='This adventure begins...'></textarea>
+                        </div>
+
+
+
+                        <div class='form-group meta'>
+                            <label for='post-category'>Category</label>
+                            <select class='form-control' id='post-category'>
+                                <option>Miscellaneous</option>
+                                <option>Update</option>
+                                <option>Adventure</option>
+                            </select>
+                            <input type='submit' value='Create Post' class='btn btn-primary'>
+                            <a href='index.html' class='btn btn-default'>Cancel</a>
+                        </div>
+
+                    </fieldset>
+                </form>
+
+            </section>
+
+            <aside class='sidebar col-md-3'>
+                <section>
+                    <h3>Recent Posts</h3>
+                    <ul>
+                        <li><a href='#'>Lorem Ipsum</a></li>
+                        <li><a href='#'>Lorem Ipsum 2</a></li>
+                        <li><a href='#'>Lorem Ipsum 3</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href='#'>Updates</a></li>
+                        <li><a href='#'>Adventures</a></li>
+                        <li><a href='#'>Miscellaneous</a></li>
+                    </ul>
+                </section>
+            </aside>
+        </main>
+
+        <footer>
+            <p>&copy; PR Pros 2016</p>
+            <nav>
+                <ul>
+                    <li><a href='#'>Home</a></li>
+                    <li><a href='#'>About Us</a></li>
+                    <li><a href='#'>Legal</a></li>
+                </ul>
+            </nav>
+        </footer>
+
+    </body>
+</html>
