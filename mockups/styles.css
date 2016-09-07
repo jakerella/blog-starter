@@ -34,31 +34,13 @@ h2 {
     width: 80%;
 }
 
-main > section {
-    border-right: 2px solid #6cbfee;
+main .posts {
     padding-top: 1em;
 }
 
 .posts article {
-    margin-bottom: 1.5em;
     color: #fff;
     position: relative;
-}
-
-.posts article::before {
-    content: '';
-    width: 12px;
-    height: 12px;
-    position: absolute;
-    left: 10.6em;
-    top: 1em;
-    transform: rotate(45deg);
-}
-.posts article:nth-child(odd)::before {
-    background-color: #6cbfee;
-}
-.posts article:nth-child(even)::before {
-    background-color: #3594cb;
 }
 
 .posts a {
@@ -70,9 +52,10 @@ main > section {
 }
 
 .posts time {
-    width: 10em;
+    width: 20%;
     text-align: right;
     float: left;
+    padding-right: 0.5em;
 }
 .posts time span {
     display: block;
@@ -80,16 +63,17 @@ main > section {
 .posts .date {
     color: #6cbfee;
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 0.9em;
 }
 .posts .time {
     color: #999;
+    font-size: 0.8em;
 }
 
 .posts .content {
     border-radius: 5px;
-    width: 40em;
-    margin-left: 11em;
+    width: 80%;
+    margin-left: 20%;
     padding: 0.5em 1em;
     box-sizing: border-box;
 }
@@ -135,6 +119,7 @@ main > section {
 
 .paging {
     text-align: center;
+    clear: both;
 }
 
 
@@ -198,4 +183,45 @@ footer {
 footer p {
     margin: 0;
     float: right;
+}
+
+
+@media (min-width: 640px) {
+    main .posts {
+        border-right: 2px solid #6cbfee;
+        width: 75%;
+        float: left;
+    }
+    main .sidebar {
+        float: left;
+        width: 25%;
+    }
+    .posts article {
+        width: 50%;
+        float: left;
+        min-height: 35em;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1023px) {
+
+}
+
+@media (min-width: 1024px) {
+    main .posts {
+        width: 80%;
+    }
+    main .sidebar {
+        width: 20%;
+    }
+    .posts article {
+        width: 33%;
+        min-height: 37em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .posts article {
+        min-height: 31em;
+    }
 }
